@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
 import male from "./assets/male.jpg";
+import TechList from "./components/TechList";
 
 function App() {
   return (
     <>
-      <h1>Oi do componente react</h1>
+      <TechList />
       <img src={male} alt="" />
     </>
   );
