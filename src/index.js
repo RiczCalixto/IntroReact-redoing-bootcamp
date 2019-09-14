@@ -1,3 +1,3 @@
 const soma = (a, b) => a + b;
 
-alert(soma(1, 5));
+alert(soma(5, 5));
