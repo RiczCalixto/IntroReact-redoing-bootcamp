@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import TechItem from "./TechItem";
 
 class TechList extends Component {
+  // static defaultProps = {
+  //   tech: "Casa"
+  // };
+
   state = {
     newTech: "",
     techs: ["Node.js", "React.js", "React Native"]
@@ -36,6 +40,7 @@ class TechList extends Component {
             />
           ))}
         </ul>
+        {/* <TechItem /> */}
         <input
           type="text"
           onChange={this.handleInputAdd}
