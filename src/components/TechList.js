@@ -29,7 +29,11 @@ class TechList extends Component {
         <h1>{this.state.newTech}</h1>
         <ul>
           {this.state.techs.map(tech => (
-            <TechItem key={tech} tech={tech} handleDelete={this.handleDelete} />
+            <TechItem
+              key={tech}
+              tech={tech}
+              onDelete={() => this.handleDelete(tech)}
+            />
           ))}
         </ul>
         <input

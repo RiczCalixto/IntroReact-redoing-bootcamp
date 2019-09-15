@@ -1,10 +1,10 @@
 import React from "react";
 
-const TechItem = ({ tech, handleDelete }) => {
+const TechItem = ({ tech, onDelete }) => {
   return (
     <li >
       {tech}
-      <button type="button" onClick={() => handleDelete(tech)}>
+      <button type="button" onClick={onDelete}>
         Deletar
       </button>
     </li>
